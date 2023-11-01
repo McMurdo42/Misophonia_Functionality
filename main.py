@@ -43,7 +43,7 @@ def colorPick():
     return colorList[randint(0,5)]
 
 def correctnum():
-    return randint(10,20)
+    return randint(10,19)
 
 def key_press(event):
     global num, dotlist, history, color, rectangle
@@ -81,7 +81,8 @@ canvas.pack()
 
 
 global File1
-filename = ("data_"+time.strftime("%Y%m%d_%H+%M+%S", time.localtime())+".txt")
+#filename = ("data_"+time.strftime("%Y%m%d_%H+%M+%S", time.localtime())+".txt")
+filename = "data.txt"
 File1 = open(filename,'w')
 
 
